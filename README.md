@@ -1,4 +1,4 @@
 # OcrHelper
 
-## ´ò°üÃüÁî
+## æ‰“åŒ…å‘½ä»¤
  dotnet publish -c Release -r win-x64 -p:PublishSingleFile=true --self-contained true /p:IncludeNativeLibrariesForSelfExtract=false /p:DebugType=None
