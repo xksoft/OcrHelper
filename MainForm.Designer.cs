@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel_Image = new System.Windows.Forms.Panel();
+            this.linkLabel_Source = new System.Windows.Forms.LinkLabel();
             this.button_StartOcr = new System.Windows.Forms.Button();
             this.checkBox_Auto = new System.Windows.Forms.CheckBox();
             this.richTextBox_Result = new System.Windows.Forms.RichTextBox();
@@ -53,6 +54,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.splitContainer1.Panel2.Controls.Add(this.linkLabel_Source);
             this.splitContainer1.Panel2.Controls.Add(this.button_StartOcr);
             this.splitContainer1.Panel2.Controls.Add(this.checkBox_Auto);
             this.splitContainer1.Panel2.Controls.Add(this.richTextBox_Result);
@@ -69,10 +71,22 @@
             this.panel_Image.Size = new System.Drawing.Size(283, 156);
             this.panel_Image.TabIndex = 0;
             // 
+            // linkLabel_Source
+            // 
+            this.linkLabel_Source.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.linkLabel_Source.AutoSize = true;
+            this.linkLabel_Source.Location = new System.Drawing.Point(186, 11);
+            this.linkLabel_Source.Name = "linkLabel_Source";
+            this.linkLabel_Source.Size = new System.Drawing.Size(44, 17);
+            this.linkLabel_Source.TabIndex = 3;
+            this.linkLabel_Source.TabStop = true;
+            this.linkLabel_Source.Text = "源代码";
+            this.linkLabel_Source.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_Source_LinkClicked);
+            // 
             // button_StartOcr
             // 
             this.button_StartOcr.Enabled = false;
-            this.button_StartOcr.Location = new System.Drawing.Point(18, 6);
+            this.button_StartOcr.Location = new System.Drawing.Point(18, 8);
             this.button_StartOcr.Name = "button_StartOcr";
             this.button_StartOcr.Size = new System.Drawing.Size(75, 23);
             this.button_StartOcr.TabIndex = 2;
@@ -82,11 +96,10 @@
             // 
             // checkBox_Auto
             // 
-            this.checkBox_Auto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox_Auto.AutoSize = true;
             this.checkBox_Auto.Checked = true;
             this.checkBox_Auto.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_Auto.Location = new System.Drawing.Point(193, 8);
+            this.checkBox_Auto.Location = new System.Drawing.Point(113, 9);
             this.checkBox_Auto.Name = "checkBox_Auto";
             this.checkBox_Auto.Size = new System.Drawing.Size(51, 21);
             this.checkBox_Auto.TabIndex = 1;
@@ -115,7 +128,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "文字识别助手";
+            this.Text = "文字识别助手 Ver1.0";
             this.TransparencyKey = System.Drawing.Color.Black;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
@@ -135,5 +148,6 @@
         private RichTextBox richTextBox_Result;
         private Button button_StartOcr;
         private CheckBox checkBox_Auto;
+        private LinkLabel linkLabel_Source;
     }
 }

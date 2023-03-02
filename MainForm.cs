@@ -1,4 +1,5 @@
 using PaddleOCRSharp;
+using System.Diagnostics;
 using System.Runtime.InteropServices;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
@@ -86,6 +87,12 @@ namespace OcrHelper
             else {
                 button_StartOcr.Enabled = true;
             }
+        }
+
+        private void linkLabel_Source_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo { UseShellExecute = true, FileName = "https://github.com/xksoft/OcrHelper" });
+
         }
     }
 }
