@@ -1,6 +1,12 @@
 ## OcrHelper 是一款基于PaddleOCR实现的从图片中识别出汉字，英文，数字的开源小工具。可以在复杂动态背景下识别出各种字体的文字和符号。轻松实现无侵入式获取各种软件，APP界面显示内容，准确率高达95%。
 
-### 适用场景
+### 目前仅支持windows7及以上64位系统
+[https://github.com/xksoft/OcrHelper/releases/download/1.0/win-x64.zip](https://github.com/xksoft/OcrHelper/releases/download/1.0/win-x64.zip?_blank)
+
+### 二次开发定制以及其他想法可联系
+
+
+### 适用场景扩展
 
 #### 1、直播间弹幕识别，聊天识别，根据识别到的直播间弹幕和聊天消息自动回答客户问题，节省人工成本。
 
