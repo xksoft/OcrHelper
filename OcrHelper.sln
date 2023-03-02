@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcrHelper", "OcrHelper.csproj", "{AB799C55-2C40-466B-A8F6-7EAC6504CB03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB799C55-2C40-466B-A8F6-7EAC6504CB03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB799C55-2C40-466B-A8F6-7EAC6504CB03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB799C55-2C40-466B-A8F6-7EAC6504CB03}.Debug|x64.ActiveCfg = Debug|x64
+		{AB799C55-2C40-466B-A8F6-7EAC6504CB03}.Debug|x64.Build.0 = Debug|x64
+		{AB799C55-2C40-466B-A8F6-7EAC6504CB03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB799C55-2C40-466B-A8F6-7EAC6504CB03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB799C55-2C40-466B-A8F6-7EAC6504CB03}.Release|x64.ActiveCfg = Release|x64
+		{AB799C55-2C40-466B-A8F6-7EAC6504CB03}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73A9F13D-11EB-426F-B453-F26E1805A87E}
+	EndGlobalSection
+EndGlobal
