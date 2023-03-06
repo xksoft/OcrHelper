@@ -7,18 +7,21 @@
 ### 适用场景扩展
 
 #### 1、直播间弹幕识别，聊天识别，根据识别到的直播间弹幕和聊天消息自动回答客户问题，节省人工成本。
+![2](https://user-images.githubusercontent.com/24860541/223008429-7d06b299-1849-4e89-b1dc-d71583cf1bd7.jpg)
+![3](https://user-images.githubusercontent.com/24860541/223008414-0a9d8ce2-e588-4768-84a3-344743fd05ff.jpg)
 
-![QQ截图20230301171435](https://user-images.githubusercontent.com/24860541/222360211-11187450-aa7b-4b59-b850-3780e9870192.jpg)
-![QQ截图20230301171345](https://user-images.githubusercontent.com/24860541/222360226-695e3bed-5eb4-4365-870f-84023920c611.jpg)
 
 
 #### 2、社交群，私域流量消息管理。根据关键词实时采集客户需求，分析，引导转化。
-![QQ截图20230301170909](https://user-images.githubusercontent.com/24860541/222362025-5843f29f-7aea-4e31-bfef-c67e17d338ab.jpg)
+![7](https://user-images.githubusercontent.com/24860541/223008458-d1a1c459-9954-4960-b1d0-c2405f4f7e9f.jpg)
+
 
 
 #### 3、pdf以及不可复制场景文字内容提取。
-![QQ截图20230301171139](https://user-images.githubusercontent.com/24860541/222362212-6114143d-2b29-4935-a55c-186dcd2c06de.jpg)
-![QQ截图20230301170739](https://user-images.githubusercontent.com/24860541/222362231-59a2f19d-170d-46c7-9898-27cb60b6100e.jpg)
+![4](https://user-images.githubusercontent.com/24860541/223008480-1604380f-84ea-4b93-a44c-545eec8a9c8c.jpg)
+![5](https://user-images.githubusercontent.com/24860541/223008491-8917fc6e-2e11-40ee-a419-38225f8e6705.jpg)
+![6](https://user-images.githubusercontent.com/24860541/223008498-81ba7390-df14-416a-99cd-b4949bd5586f.jpg)
+
 
 #### 打包命令
  dotnet publish -c Release -r win-x64 -p:PublishSingleFile=true --self-contained true /p:IncludeNativeLibrariesForSelfExtract=false /p:DebugType=None
