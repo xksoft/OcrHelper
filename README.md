@@ -3,8 +3,6 @@
 ### 目前仅支持windows7及以上64位系统
 [https://github.com/xksoft/OcrHelper/releases/download/1.0/win-x64.zip](https://github.com/xksoft/OcrHelper/releases/download/1.0/win-x64.zip?_blank)
 
-### 二次开发定制以及其他想法可联系
-
 
 ### 适用场景扩展
 
