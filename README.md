@@ -3,6 +3,10 @@
 ### 目前仅支持windows7及以上64位系统
 [https://github.com/xksoft/OcrHelper/releases/download/1.0/win-x64.zip](https://github.com/xksoft/OcrHelper/releases/download/1.0/win-x64.zip?_blank)
 
+### 关注公众号，免费体验更多黑科技
+![qrcode_for_gh_a53a61421e9e_258](https://user-images.githubusercontent.com/24860541/224869945-18d2a500-812b-48b4-85cf-3efa133aacf1.jpg)
+
+
 ### 有二次开发功能扩展需求可微信联系
 ![wx](https://user-images.githubusercontent.com/24860541/223293827-33a9cc2f-e91c-49b0-b46a-2ba036b83f2c.jpg)
 
