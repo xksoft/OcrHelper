@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel_Image = new System.Windows.Forms.Panel();
+            this.checkBox_Append = new System.Windows.Forms.CheckBox();
             this.linkLabel_Source = new System.Windows.Forms.LinkLabel();
             this.button_StartOcr = new System.Windows.Forms.Button();
             this.checkBox_Auto = new System.Windows.Forms.CheckBox();
             this.richTextBox_Result = new System.Windows.Forms.RichTextBox();
-            this.checkBox_Append = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -72,6 +72,18 @@
             this.panel_Image.Name = "panel_Image";
             this.panel_Image.Size = new System.Drawing.Size(280, 251);
             this.panel_Image.TabIndex = 0;
+            // 
+            // checkBox_Append
+            // 
+            this.checkBox_Append.AutoSize = true;
+            this.checkBox_Append.Checked = true;
+            this.checkBox_Append.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox_Append.Location = new System.Drawing.Point(194, 10);
+            this.checkBox_Append.Name = "checkBox_Append";
+            this.checkBox_Append.Size = new System.Drawing.Size(51, 21);
+            this.checkBox_Append.TabIndex = 4;
+            this.checkBox_Append.Text = "累加";
+            this.checkBox_Append.UseVisualStyleBackColor = true;
             // 
             // linkLabel_Source
             // 
@@ -121,18 +133,6 @@
             this.richTextBox_Result.TabIndex = 0;
             this.richTextBox_Result.Text = "";
             // 
-            // checkBox_Append
-            // 
-            this.checkBox_Append.AutoSize = true;
-            this.checkBox_Append.Checked = true;
-            this.checkBox_Append.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_Append.Location = new System.Drawing.Point(194, 10);
-            this.checkBox_Append.Name = "checkBox_Append";
-            this.checkBox_Append.Size = new System.Drawing.Size(51, 21);
-            this.checkBox_Append.TabIndex = 4;
-            this.checkBox_Append.Text = "累加";
-            this.checkBox_Append.UseVisualStyleBackColor = true;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -142,7 +142,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "文字识别助手 Ver1.0";
+            this.Text = "文字识别助手 Ver1.1";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Black;
             this.Load += new System.EventHandler(this.MainForm_Load);
