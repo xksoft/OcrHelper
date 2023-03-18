@@ -1,6 +1,7 @@
 using PaddleOCRSharp;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace OcrHelper
@@ -22,6 +23,7 @@ namespace OcrHelper
         OCRStructureResult ocrResult = new OCRStructureResult();
         PaddleOCREngine ocrEngine;
         Rectangle rectangle = Screen.PrimaryScreen.Bounds;
+        string resultOld = "";
         private void MainForm_Load(object sender, EventArgs e)
         {
             this.BackColor = Color.Red;
@@ -53,9 +55,9 @@ namespace OcrHelper
             ReleaseCapture();
             SendMessage(this.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0);
         }
-        public void StartOcr(bool auto=false)
+        public void StartOcr(bool auto = false)
         {
-            if (!checkBox_Auto.Checked&&auto) { return; }
+            if (!checkBox_Auto.Checked && auto) { return; }
             Image image = new Bitmap(panel_Image.Width, panel_Image.Height);
             Graphics graph = Graphics.FromImage(image);
             graph.CopyFromScreen(new Point(this.Left, this.Top + (this.Height - this.ClientSize.Height)), new Point(0, 0), new Size(panel_Image.Width, panel_Image.Height - (this.Height - this.ClientSize.Height)));
@@ -66,13 +68,33 @@ namespace OcrHelper
             string result = "";
             for (int i = 0; i < textBlocks.Count; i++)
             {
-                result += textBlocks[i].Text+"\r\n";
+                result += textBlocks[i].Text + "\r\n";
 
             }
-            this.BeginInvoke(new Action(() =>
+            if (checkBox_Append.Checked)
             {
-                richTextBox_Result.Text = result;
-            }));
+                if (resultOld != result)
+                {
+                    this.BeginInvoke(new Action(() =>
+                   {
+                       richTextBox_Result.Text += result;
+                       if (!richTextBox_Result.Focused)
+                       {
+                           richTextBox_Result.SelectionStart = richTextBox_Result.Text.Length;
+                           richTextBox_Result.ScrollToCaret();
+                       }
+                   }));
+                    resultOld = result;
+                }
+            }
+            else
+            {
+                this.BeginInvoke(new Action(() =>
+                {
+                    richTextBox_Result.Text = result;
+                }));
+            }
+
 
         }
 
