@@ -20,6 +20,9 @@ namespace OcrHelper
         public const int SC_MOVE = 0xF010;
         public const int HTCAPTION = 0x0002;
 
+        [DllImport("user32", EntryPoint = "SetWindowPos")]
+        public static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndlnsertAfter, int X, int Y, int cx, int cy, int flags);
+
         OCRStructureResult ocrResult = new OCRStructureResult();
         PaddleOCREngine ocrEngine;
         Rectangle rectangle = Screen.PrimaryScreen.Bounds;
@@ -28,6 +31,7 @@ namespace OcrHelper
         {
             this.BackColor = Color.Red;
             this.TransparencyKey = Color.Red;
+            SetWindowPos(this.Handle, new IntPtr(-1),this.Left,this.Top,this.Width,this.Height,1|2);
 
             OCRModelConfig config = new OCRModelConfig();
             string root = System.IO.Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
